@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (min-width: 1200px){
+            
+        
+        html {
+            background-image: url("./Assets/Background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #cccccc;
+            box-sizing: content-box;
+            width: 100vw;
+            height: 100vh;
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+        
+        .main{
+            height: 60vh;
+            width: 26vw;
+            margin: auto;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+      }
+      .head{
+          flex:1;
+          background-color: rgb(35 85 242);
+          border-top-right-radius: 15px;
+          border-top-left-radius: 15px;
+          background-image: url(./Assets/Pattern.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .content{
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .top-text{
+          flex:1;
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: sans-serif;
+          padding-top: 10px;
+        }
+      .email{
+          flex:1.5;
+          display: flex;
+          flex-direction: row;
+          align-content: space-around;
+          align-items: center;
+          padding-right: 20px;
+          padding-left: 20px;
+      }
+      .profile{
+          flex:2;
+          display: flex;
+          flex-direction: column        ;
+      }
+
+
+
+      #head-text{
+          color: white;
+          font-size: 25px;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 20px;
+
+      }
+      #text{
+          color: rgb(145 145 145);
+          font-size: 13px;
+          font-weight: 550;
+          word-spacing: 1px;
+          margin-bottom: 0px;
+      }
+      #info{
+          color: rgb(192 192 192);
+          font-size: 13px;
+          font-family: sans-serif;
+          font-weight: normal;
+          margin-left: 20px;
+          margin-top: 0px;
+          line-height: 0.1px;
+      }
+      #email-input{
+          flex:3.5;
+          height: 45%;
+          margin-right: 10px;
+          border-radius: 5px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #eeeff5;
+          background-color: #f5f7fa;
+          padding-bottom: 0px;
+      }
+      .submit{
+          border-radius: 5px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #eeeff5;
+          background-color: #2355f2;
+          flex:1;
+          height: 50%;
+          color: #f4f7ff;
+          padding: 5px;
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+
+      #email-input::placeholder{
+          color: #c3c6d2;
+          padding-left: 10px;
+      }
+
+      .prof-details{
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content:center;
+          align-items:flex-start;
+
+      }
+      .prop{
+          flex: 1;
+          
+      }
+      .prof-pic{
+        flex: 0.9;
+        width: 50%;
+        direction: rtl;
+      }
+      .prof-pic img {
+          size: 0.5rem;
+          padding-right: 10px;
+          padding-top: 10px;
+      }
+      .name{
+          flex: 1.1;
+          width: 50%;
+             
+          
+      }
+      #username{
+          font-size: 0.75rem;
+          /* text-align: center; */
+          margin-bottom: 1px;
+          font-family: sans-serif;
+          font-weight: bold;
+          color: rgb(20 20 20);
+          letter-spacing: 0.1px;
+      }
+      #title{
+          font-size: 0.75rem;
+          /* text-align: center; */
+          margin-top:0px ;
+          color: #777777;
+          font-weight: 300;
+      }
+
+      .prop p {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 0.7rem;
+          text-align: center;
+          color: #686868;
+      }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="head">
+                <p id="head-text">Creating email<br>templates has never<br>been easier.</p>
+            </div>
+            <div class="content">
+                <div class="top-text">
+                    <p id="text">Recieve daily emails on how to best create email<br>templates, completely free.</p>
+                </div>
+                <div class="email">
+                    <input type="email" name="user-email" id="email-input" placeholder="Email Address">
+                    <button class="submit">Subscribe</button>
+                </div>
+                <p id="info">No spam, ever. Unsubscribe anytime.</p>
+                <div class="profile">
+                    <div class="prof-details">
+                        <div class="prof-pic">
+                            
+                            
+                            <img src="./Assets/User Avatar.svg" alt="">
+                            
+                        </div>
+                        <div class="name">
+                            <p id="username">Amirmahdi Alavi</p>
+                            <p id="title">Programmer</p>
+                        </div>
+                    </div>
+                    <div class="prop">
+                        <p>&ldquo;By far one of the bes newsletter i've ever subscribed<br>to.It sent biweekly and i'm always looking forward<br>to ther emials.&rdquo;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
